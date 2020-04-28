@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -70,7 +75,10 @@
             }
           }
         },
-        "extract-i18n": {
+        "extract-i18n": {"styles": [
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "angularAppProj1:build"
@@ -88,9 +96,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +132,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularAppProj1"
+    }
+  },
+  "defaultProject": "angularAppProj1",
+  "cli": {
+    "analytics": "13c629af-420c-4adf-b294-7fe3c7066167"
+  }
 }
